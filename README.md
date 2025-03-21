@@ -4,17 +4,17 @@ The project focuses on clustering diffraction patterns acquired from 4D-STEM exp
 
 1. '00_clustering_nmf_kConponentLoss/00_clustering_NMF_kConponentLoss.py' Purpose: Determines the optimal number of clusters by applying Non-negative Matrix Factorization (NMF) to diffraction patterns.
     Description:
-     Loads a dataset of diffraction patterns and reshapes them.
-     Performs NMF on the data using GPU computation.
-     Calculates the reconstruction error (mean absolute difference) for different numbers of components .
-     Identifies the optimal number of components using the knee point detection method.
-     Saves the result as .npy and .png files.
+     1. Loads a dataset of diffraction patterns and reshapes them (4d-24).
+     2. Performs NMF on the data using GPU computation.
+     3. Calculates the reconstruction error (mean absolute difference) for different numbers of components .
+     4. Identifies the optimal number of components using the knee point detection method.
+     5. Saves the result as .npy and .png files.
 
 2. '01_clustering_NMF_iqa/00_IQA_final_version.py' Purpose: Evaluates the quality of clustering results by comparing typical diffraction patterns of each cluster using various IQA (Image Quality Assessment) metrics.
     Description:
-     Computes IQA metrics: PSNR, SSIM, MDSI, and GMSD.
-     Generates an IQA matrix comparing each pair of clusters.
-     Highlights the best clustering results and saves them as .npy files and .png heatmaps.
+     1. Computes IQA metrics: PSNR, SSIM, MDSI, and GMSD.
+     2. Generates an IQA matrix comparing each pair of clusters.
+     3. Highlights the best clustering results and saves them as .npy files and .png heatmaps.
    
 3. '02_clusteringwithcolor_overlapping_returnRawdata/00_final_test_firstSecond_overlapping.py' Purpose: analyze and visualize diffraction patterns (DPs) by clustering them based on their features, assigning specific colors to each cluster, and studying the evolution of overlapping regions with varying thresholds. Additionally, it visualizes the Non-Negative Matrix Factorization (NMF) results alongside their corresponding raw diffraction patterns
     Description:
