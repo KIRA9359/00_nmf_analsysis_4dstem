@@ -37,10 +37,6 @@ The project focuses on clustering diffraction patterns acquired from 4D-STEM exp
        Assigns each diffraction pattern to a cluster and saves the results.
        Generates the W and H matrices from NMF decomposition.
 
-     2. 'clustering_NMF_dp_clustering/01_montage.py':
-       Creates a montage of the clustered diffraction patterns and their corresponding raw patterns.
-       Visualizes the results in a grid format for easy comparison.
-
      3. 'clustering_NMF_dp_clustering/04_choose_Maxlight.py':
        Selects the brightest diffraction pattern from each cluster based on the average pixel intensity.
        Saves the selected patterns for further analysis.
